@@ -1,12 +1,12 @@
 body {
     margin: 0px;
     overflow-x: hidden;
-
 }
 
 :root {
     --ci1: #33658A;
-    --ci2: #86BBD8;
+    /*red bg*/
+    --ci2: #401F1F; 
     --ci3: #758E4F;
     --ci4: #F6AE2D;
     --ci5: #F26419;
@@ -17,11 +17,10 @@ body {
     --nav-link: var(--ci1);
     --nav-hover: var(--ci2);
     --bg-color: #fff;
-    --text-color: #242C5B;
+    --text-color: #F8EFD7;
     --box-shadow: 0 0 0 1px rgba(0, 0, 0, .04), 0 2px 4px 0 rgba(0, 0, 0, .08);
     --round: 5px;
-    --font-kanit: 'Kanit', sans-serif;
-    --pmr-font: var(--font-kanit);
+    --pmr-font:  'Kanit',-apple-system, BlinkMacSystemFont, sans-serif !important;
     --txt-font: var(--font-anuphan);
 }
 
@@ -40,4 +39,48 @@ body {
 .logo{
     position: absolute;
     top: 2%;
+}
+#p6{
+    background-color: var(--ci2);
+    position: relative;
+    height: 300vh;
+}
+.ani-p6 {
+    position: absolute;
+    top: 4%;
+    left: 0%;
+    width: 100%;
+    z-index: 0;
+}
+.g6{
+    position: absolute;
+    top: 32%;
+    left: 0%;
+    width: 100%;
+    z-index: 1;
+}
+#p7{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 100%;
+    z-index: 2;
+}
+/*#p7_t1{
+    font-size: 1.6em !important;
+    text-align: right;
+}*/
+#p7p2{
+    position: absolute;
+    top: 72%;
+    left: 0%;
+    width: 100%;
+    z-index: 2;
+}
+#redtourist1{
+    position: absolute;
+    top: 70%;
+    left: 28%;
+    height: 25%;
+    z-index: 3;
 }
