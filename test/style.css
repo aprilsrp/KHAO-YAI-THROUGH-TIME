@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     overflow-x: hidden;
+    background-color: #0a1c00;
 }
 
 :root {
@@ -24,22 +25,113 @@ body {
     --txt-font: var(--font-anuphan);
 }
 
-#home-sec{
-    position: absolute;
+#home {
+  position: absolute;
+  left: 0%;
+  z-index: 2;
 }
 
-.menu {
-    height: 6%;
-    position: fixed;
-    right: 3%;
-    top: 3%;
-    z-index: 20;
+/*.container {
+  width: 100%;
+  height: 100vh;
+}*/
+#p1{
+  position: relative;
+  height: 100vh;
+  z-index: 20;
+}
+#logo {
+  position: absolute;
+  top: 12.75%;
+  left: 40%;
+  width: 20%;
+  z-index: 5;
+}
+#logo img {
+  width: 100%;
 }
 
-.logo{
-    position: absolute;
-    top: 2%;
+.g1 {
+  position: absolute;
+  top: 15%;
+    left: 0%;
+    width: 100%;
+    z-index: 0;
 }
+
+#text-p1 {
+  position: absolute;
+  top: 65%;
+  left: 33.5%;
+  height: 120px;
+  width: 500px;
+}
+
+#text-p1-1 {
+  width: 500px;
+}
+
+#scroll {
+  position: absolute;
+  top: 80%;
+  left: 42.5%;
+  height: 120px;
+  width: 250px;
+}
+
+#arrow {
+  position: absolute;
+  top: 91%;
+  left: 48.5%;
+  animation: swing 0.7s ease-in-out 0s infinite alternate both;
+  animation-iteration-count: infinite;
+}
+
+#arrow img {
+  height: 50px;
+  width: 50px;
+}
+
+@keyframes swing {
+  0% {
+    top: 90%;
+  }
+  100% {
+    top: 91%;
+  }
+}
+
+#menu {
+  position: fixed;
+  right: 25px;
+  top: 25px;
+  z-index: 5;
+  width: 50px;
+}
+
+#elep1{
+    width: 60%;
+    position: absolute;
+    top: 25%;
+    left: -50%;
+    transition: left 0.6s;
+}
+#leo{
+    width: 35%;
+    top: 70%;
+    right: -40%;
+    position: absolute;
+    transition: right 0.6s;
+}
+
+#p2 {
+  background-color: #65d1e5;
+  height: 100vh;
+}
+
+
+
+/*  page 6 up */
 #p6{
     background-color: var(--ci2);
     position: relative;
@@ -54,14 +146,14 @@ body {
 }
 .g6{
     position: absolute;
-    top: 32%;
+    top: 34.5%;
     left: 0%;
     width: 100%;
     z-index: 1;
 }
 #p7{
     position: absolute;
-    top: 50%;
+    top: 52%;
     left: 0%;
     width: 100%;
     z-index: 2;
@@ -72,15 +164,90 @@ body {
 }*/
 #p7p2{
     position: absolute;
-    top: 72%;
+    top: 74%;
     left: 0%;
     width: 100%;
     z-index: 2;
 }
 #redtourist1{
     position: absolute;
-    top: 70%;
+    top: 72%;
     left: 28%;
     height: 25%;
     z-index: 3;
+}
+#bg-7{
+    background-color: var(--ci2);
+    position: relative;
+    height: 200vh;
+    width: 100vw;
+    top: 80.5%;
+     left: -5%;
+}
+.greenmount {
+
+  width: : 100%;
+  top: -60%;
+  position: absolute;
+  z-index: 0;
+}
+.greenmount2 {
+
+  height: 100%;
+  top: 0%;
+  position: absolute;
+  z-index: 0;
+}
+.greenmount3 {
+
+  height: 100%;
+  top: 60%;
+  position: absolute;
+  z-index: 0;
+}
+.car {
+  width: 40%;
+  position: absolute;
+  animation: car 4s infinite;
+}
+.crash {
+  width: 25%;
+  top: 70%;
+  position: absolute;
+  animation: crash 4s infinite;
+  z-index: 0;
+}
+.bluedeer-1 {
+  width: 40%;
+  position: absolute;
+  animation: deer-dead 4s infinite;
+}
+@keyframes car {
+  0% {top: 25%; left: -40%;}
+  25% {top: 25%; left: -40%;}
+  50% {top: 25%; left: -5%;}
+  75% {top: 25%; left:-5%;}
+  100% {top: 25%; left: -5%;}
+}
+@keyframes  crash{
+  0% {top: 10%; left: 25%; opacity: 0;}
+  20% {top: 10%; left: 25%; opacity: 0;}
+  40% {top: 10%; left: 25%; opacity: 0;}
+  60% {top: 10%; left: 25%; opacity: 1;}
+  80% {top: 10%; left: 25%; opacity: 0;}
+  100% {top: 10%; left: 25%; opacity: 1;}
+}
+@keyframes deer-dead {
+  0% {top: 20%; left: 24%; transform: rotate(0deg);}
+  25% {top: 20%; left: 24%; transform: rotate(0deg);}
+  50% {top: 20%; left: 24%; transform: rotate(0deg);}
+  75% {top: 20%; left: 26%; transform: rotate(0deg);}
+  100% {top: 20%; left: 26%; transform: rotate(180deg);}
+}
+.car_news{
+  width: 35%;
+  height: 35%;
+  position: absolute;
+  top: 70%;
+  right: 5%;
 }
