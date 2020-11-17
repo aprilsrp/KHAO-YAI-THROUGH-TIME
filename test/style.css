@@ -180,27 +180,26 @@ body {
     background-color: var(--ci2);
     position: relative;
     height: 200vh;
-    width: 100vw;
     top: 80.5%;
      left: -5%;
 }
 .greenmount {
 
-  width: : 100%;
+  width: 90%;
   top: -60%;
   position: absolute;
   z-index: 0;
 }
 .greenmount2 {
 
-  height: 100%;
+  width: 90%;
   top: 0%;
   position: absolute;
   z-index: 0;
 }
 .greenmount3 {
 
-  height: 100%;
+  width: 90%;
   top: 60%;
   position: absolute;
   z-index: 0;
