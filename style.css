@@ -127,31 +127,29 @@ body {
   height: 100vh;
 }
 
-
-
 /*  page 6 up */
 #p6{
     background-color: var(--ci2);
     position: relative;
-    height: 117vw;
+    height: 115vw;
 }
 .ani-p6 {
     position: absolute;
-    top: 15vw;
+    top: 10vw;
     left: 25vw;
     width: 75vw;
     z-index: 0;
 }
 .g6{
     position: absolute;
-    top: 40vw;
+    top: 35vw;
     left: 0%;
     width: 100%;
     z-index: 1;
 }
 #p7{
     position: absolute;
-    top: 71vw;
+    top: 66vw;
     left: 0%;
     width: 100%;
     z-index: 2;
@@ -163,18 +161,15 @@ body {
 #pola7{
   position: absolute;
   width: 36vw;
-  top: 83vw;
+  top: 78vw;
   left:15vw;
   z-index: 5;
   transform: rotate(-5deg);
 }
 #p8{
     position: relative;
-    top: 74%;
-    left: 0%;
     height: 50vw;
     background-color: var(--ci2); 
-    z-index: 2;
 }
 #redtourist1{
     position: absolute;
@@ -185,8 +180,6 @@ body {
 }
 #p9{
     position: relative;
-    top: 74%;
-    left: 0%;
     height: 120vw;
     background-color: var(--ci2);
     z-index: 2;
@@ -194,6 +187,7 @@ body {
 #g9{
   position: absolute;
   height: 125vw;
+  z-index: 0;
 }
 /*#ani-9{
     background-color: var(--ci2);
@@ -250,3 +244,61 @@ body {
   top: 70%;
   right: 5%;
 }*/
+
+
+/* page 11 up*/
+#p11{
+  position: relative;;
+  height: 400vw;
+  background-color: #39583F;
+  z-index: 1;
+}
+#tp12{
+  font-size: 3vw; 
+  top:79.2vw;
+  left: 37vw;
+  position: absolute;
+  z-index: 5;
+}
+#g12{
+  position: absolute;
+  top: 44vw;
+}
+#g13{
+  position: absolute;
+  top: 125vw;
+}
+#tp13{
+  position: absolute;
+  top: 110vw;
+}
+#tiger13{
+  position: absolute;
+  top: 172vw;
+  left: 73vw;
+}
+#g14{
+  position: absolute;
+  top: 197vw;
+}
+#g15{
+  position: absolute;
+  top: 209vw;
+}
+#yha1{
+  position: absolute;
+  top: 300vw;
+  left: 70vw
+}
+#yha2{
+  position: absolute;
+  top: 300vw;
+  left: 75vw
+}
+
+
+
+/*pang 16 up*/
+#p16{
+  position: relative;
+}
