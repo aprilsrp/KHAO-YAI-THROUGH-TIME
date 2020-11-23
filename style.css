@@ -80,70 +80,48 @@ body {
 200 pt = 17.293583789062502vw | 20 px = 13.020833333333334vw
 
 --------------------------------------------------------------------------------------
-
 #home {
   position: absolute;
   left: 0%;
   z-index: 2;
 }
 
-/*.container {
-  width: 100%;
-  height: 100vh;
-}*/
-#p1{
+#p1 {
   position: relative;
-  height: 100vh;
+  height: 56vw;
   z-index: 20;
 }
 #logo {
-  position: absolute;
-  top: 12.75%;
   left: 30%;
-  width: 20%;
-  z-index: 5;
-}
-#logo img {
-  width: 100%;
+  width: 25vw;
 }
 
 .g1 {
   position: absolute;
-  top: 15%;
-    left: 0%;
-    width: 100%;
-    z-index: 0;
+  top: 7vw;
+  width: 100%;
+  z-index: 0;
 }
 
-#text-p1 {
-  position: absolute;
-  top: 80%;
-  padding-top: vh;
-/*  height: 120px;
-  width: 500px;*/
-  z-index: 1;
+#p1-text-1 {
+  font-size: 1.8vw;
 }
 
-/*#text-p1-1 {
-  width: 500px;
-}*/
-
-#scroll {
-  position: absolute;
-  top: 100%;
-  z-index: 1;
-
+#p1-text-2 {
+  font-size: 2.5vw;
 }
 
 #arrow {
   position: absolute;
-  top: 50%;
-  height: 30%;
+  left: 15vw;
   z-index: 2;
   animation: swing 0.7s ease-in-out 0s infinite alternate both;
   animation-iteration-count: infinite;
 }
 
+#arrow img {
+  width: 2vw;
+}
 
 @keyframes swing {
   0% {
@@ -162,24 +140,189 @@ body {
   width: 50px;
 }
 
-#elep1{
-    width: 60%;
-    position: absolute;
-    top: 25%;
-    left: -50%;
-    transition: left 0.6s;
+#elep1 {
+  width: 60%;
+  position: absolute;
+  top: 25%;
+  left: -50%;
+  transition: left 0.6s;
 }
-#leo{
-    width: 35%;
-    top: 70%;
-    right: -40%;
-    position: absolute;
-    transition: right 0.6s;
+#leo {
+  width: 35%;
+  top: 70%;
+  right: -40%;
+  position: absolute;
+  transition: right 0.6s;
 }
 
+/*  page 2 up */
 #p2 {
   background-color: #65d1e5;
-  height: 100vh;
+  height: 91vw;
+  padding: 1vw;
+}
+
+#p2-text-1 {
+  color: black;
+  font-size: 5.2vw;
+  font-stretch: 100%;
+}
+#p2-text-2 {
+  color: black;
+  font-size: 2.4vw;
+  font-stretch: 100%;
+}
+
+#map {
+  width: 45vw;
+}
+.g2 {
+  position: absolute;
+  top: 87.3vw;
+  width: 100%;
+  z-index: 0;
+  left: 0vw;
+}
+
+#p2-text-3 {
+  color: black;
+  font-size: 2.4vw;
+  font-stretch: 100%;
+}
+/*  page 3 up */
+#p3 {
+  background-color: #401f1f;
+  height: 50vw;
+  padding: 1vw;
+}
+#p3-text-1 {
+  font-size: 2.4vw;
+  line-height: 1.85;
+}
+#p3-text-2 {
+  font-size: 4.4vw;
+  line-height: 1.35;
+}
+#p3-text-3 {
+  font-size: 1.7vw;
+  line-height: 1.45;
+}
+
+.g3 {
+  position: absolute;
+  top: -7vw;
+  width: 20vw;
+  z-index: 1;
+}
+
+#trash {
+  position: absolute;
+  top: -3vw;
+  width: 60vw;
+  z-index: 1;
+  left: -20vw;
+}
+
+#eleplant-p3 {
+  position: absolute;
+  top: -32vw;
+  width: 75vw;
+  z-index: 2;
+  left: -17vw;
+}
+
+#leopard-p3 {
+  position: absolute;
+  top: -14vw;
+  width: 50vw;
+  z-index: 2;
+  left: -10vw;
+}
+
+/*  page 4 up */
+#p4 {
+  background-color: #401f1f;
+  height: 70vw;
+}
+
+.g4-1 {
+  position: absolute;
+  left: -30vw;
+  top: -15vw;
+  width: 70vw;
+  z-index: 1;
+}
+
+.g4-2 {
+  position: absolute;
+  left: -37vw;
+  top: 14vw;
+  width: 100vw;
+  z-index: 1;
+}
+
+#p4-text-1 {
+  text-align: right;
+  font-size: 2.1vw;
+  line-height: 2.15;
+}
+.red {
+  color: #ea424e;
+}
+#p4-text-2 {
+  position: absolute;
+  left: 33vw;
+  width: 10vw;
+  top: 8vw;
+}
+#p4-text-3 {
+  position: absolute;
+  left: 33vw;
+  width: 10vw;
+  top: 9vw;
+}
+
+#p4-text-4 {
+  text-align: left !important;
+  font-size: 2.1vw;
+}
+#deer-p4-1 {
+  position: absolute;
+  left: 12vw;
+  width: 35vw;
+  top: 38vw;
+  z-index: 1;
+}
+#deer-p4-2 {
+  position: absolute;
+  left: 48vw;
+  width: 35vw;
+  top: 38vw;
+  z-index: 1;
+}
+/*  page 5 up */
+#p5 {
+  background-color: #401f1f;
+  height: 61vw;
+}
+
+.g5 {
+  position: absolute;
+  top: -10vw;
+  width: 100%;
+  z-index: 0;
+}
+#p5-text-1 {
+  text-align: right;
+  font-size: 4vw;
+  line-height: 1.1;
+}
+#redtourist-p5 {
+  position: absolute;
+  left: 10vw;
+  width: 25vw;
+  top: 22vw;
+  z-index: 1;
 }
 
 /*  page 6 up */
