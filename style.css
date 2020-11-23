@@ -26,6 +26,61 @@ body {
     --txt-font: 'Sarabun',-apple-system, BlinkMacSystemFont, sans-serif !important;
 }
 
+/* space */
+
+.vw-05 {
+  height: 0.5vw !important;
+}
+.vw-1 {
+  height: 1vw !important;
+}
+.vw-2 {
+  height: 2vw !important;
+}
+.vw-3 {
+  height: 3vw !important;
+}
+.vw-4 {
+  height: 4vw !important;
+}
+.vw-5 {
+  height: 5vw !important;
+}
+.vw-30 {
+  height: 30vw !important;
+}
+----------------------------------------------------------------------------------
+
+/* font size */
+
+.fs-40{
+  font-size: 3.458716731770833vw !important;
+}
+.fs-50{
+  font-size: 1.6vw !important;
+}
+.fs-80{
+  font-size: 4vw !important;
+}
+.fs-100{
+  font-size: 5vw !important;
+}
+.fs-150{
+  font-size: 7.5vw !important;
+}
+.fs-200{
+  font-size: 10vw !important;
+}
+
+40 pt = 3.458716731770833vw   |
+50 pt = 4.3233959635416666vw  |
+80 pt = 6.917433528645834vw   |
+100 pt = 8.646791861979166vw  |
+150 pt = 12.970187825520833vw |
+200 pt = 17.293583789062502vw | 20 px = 13.020833333333334vw
+
+--------------------------------------------------------------------------------------
+
 #home {
   position: absolute;
   left: 0%;
@@ -181,12 +236,14 @@ body {
 #p9{
     position: relative;
     height: 120vw;
+
     background-color: var(--ci2);
     z-index: 2;
 }
 #g9{
   position: absolute;
   height: 125vw;
+  width: 100%;
   z-index: 0;
 }
 /*#ani-9{
@@ -248,10 +305,15 @@ body {
 
 /* page 11 up*/
 #p11{
-  position: relative;;
-  height: 400vw;
+  position: relative;
+  height: 280vw;
   background-color: #39583F;
   z-index: 1;
+}
+#head11{
+  z-index: 5; 
+  position: absolute;
+  width: 100%;
 }
 #tp12{
   font-size: 3vw; 
@@ -263,42 +325,56 @@ body {
 #g12{
   position: absolute;
   top: 44vw;
+  width: 100%;
 }
 #g13{
   position: absolute;
-  top: 125vw;
+  top: 107vw;
+  width: 100%;
 }
 #tp13{
   position: absolute;
-  top: 110vw;
+  top: 92vw;
 }
 #tiger13{
   position: absolute;
-  top: 172vw;
-  left: 73vw;
+  top: 152.5vw;
+  left: 72vw;
+  width: 15vw;
 }
 #g14{
   position: absolute;
-  top: 197vw;
+  top: 164vw;
+  width: 100%;
 }
 #g15{
   position: absolute;
-  top: 209vw;
+  top: 175vw;
+  width: 100%;
 }
 #yha1{
   position: absolute;
-  top: 300vw;
-  left: 70vw
+  top: 253vw;
+  left: 65vw;
+  width:30vw;
+  z-index: 1;
 }
 #yha2{
   position: absolute;
-  top: 300vw;
-  left: 75vw
+  top: 249vw;
+  left: 79vw;
+  width:20vw;
+  z-index: 0;
 }
-
-
 
 /*pang 16 up*/
 #p16{
   position: relative;
+  height: 249vw;
+  background-color: #39583F;
+  z-index: 1;
 }
+--------------------------------------------
+/* game */
+--------------------------------------------
+
