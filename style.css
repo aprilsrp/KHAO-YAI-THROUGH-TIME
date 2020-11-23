@@ -389,17 +389,12 @@ body {
   width: 100%;
   z-index: 0;
 }
-/*#ani-9{
-    background-color: var(--ci2);
-    position: relative;
-    height: 200vh;
-    width: 100vw;
-    top: 80.5%;
-     left: -5%;
+
+#ani-9{
 }
 
 .car {
-  width: 40%;
+  width: 45%;
   position: absolute;
   animation: car 4s infinite;
 }
@@ -423,12 +418,12 @@ body {
   100% {top: 25%; left: -5%;}
 }
 @keyframes  crash{
-  0% {top: 10%; left: 25%; opacity: 0;}
-  20% {top: 10%; left: 25%; opacity: 0;}
-  40% {top: 10%; left: 25%; opacity: 0;}
-  60% {top: 10%; left: 25%; opacity: 1;}
-  80% {top: 10%; left: 25%; opacity: 0;}
-  100% {top: 10%; left: 25%; opacity: 1;}
+  0% {top: 15%; left: 25%; opacity: 0;}
+  20% {top: 15%; left: 25%; opacity: 0;}
+  40% {top: 15%; left: 25%; opacity: 0;}
+  60% {top: 15%; left: 25%; opacity: 1;}
+  80% {top: 15%; left: 25%; opacity: 0;}
+  100% {top: 15%; left: 25%; opacity: 1;}
 }
 @keyframes deer-dead {
   0% {top: 20%; left: 24%; transform: rotate(0deg);}
@@ -443,7 +438,7 @@ body {
   position: absolute;
   top: 70%;
   right: 5%;
-}*/
+}
 
 
 /* page 11 up*/
@@ -469,6 +464,21 @@ body {
   position: absolute;
   top: 44vw;
   width: 100%;
+}
+
+/*? anim page 12*/
+#changP12{
+  position: absolute;
+    width: 40vw;
+    top: 72vw;
+    z-index: 5;
+    left: 66vw;
+}
+#kwangP12{
+  position: absolute;
+  top: 91vw;
+  width: 22vw;
+  left: 21vw;
 }
 #g13{
   position: absolute;
@@ -509,6 +519,12 @@ body {
   width:20vw;
   z-index: 0;
 }
+#kwangP15{
+  position: absolute;
+  top: 235vw;
+  left: 12vw;
+  width: 40vw;
+}
 
 /*pang 16 up*/
 #p16{
@@ -517,7 +533,19 @@ body {
   background-color: #39583F;
   z-index: 1;
 }
+#changP16{
+  position: absolute;
+  top: 20vw;
+  left: 52vw;
+  width: 55vw;
+}
+
 --------------------------------------------
 /* game */
 --------------------------------------------
-
+/*#kwangP18{
+  position: absolute;
+  top: 190vw;
+  left: 52vw;
+  width: 55vw;
+}*/
