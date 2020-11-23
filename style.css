@@ -188,6 +188,101 @@ body {
   left: -20vw;
 }
 
+#eleplant-p3 {
+  position: absolute;
+  top: -32vw;
+  width: 75vw;
+  z-index: 2;
+  left: -17vw;
+}
+
+#leopard-p3 {
+  position: absolute;
+  top: -14vw;
+  width: 50vw;
+  z-index: 2;
+  left: -10vw;
+}
+
+/*  page 4 up */
+#p4 {
+  background-color: #401f1f;
+  height: 70vw;
+}
+
+.g4-1 {
+  position: absolute;
+  left: -30vw;
+  top: -15vw;
+  width: 70vw;
+  z-index: 1;
+}
+
+.g4-2 {
+  position: absolute;
+  left: -37vw;
+  top: 14vw;
+  width: 100vw;
+  z-index: 1;
+}
+
+#p4-text-1 {
+  text-align: right;
+  font-size: 2.1vw;
+  line-height: 2.15;
+}
+.red {
+  color: #ea424e;
+}
+#p4-text-2 {
+  position: absolute;
+  left: 33vw;
+  width: 10vw;
+  top: 8vw;
+}
+#p4-text-3 {
+  position: absolute;
+  left: 33vw;
+  width: 10vw;
+  top: 9vw;
+}
+
+#p4-text-4 {
+  text-align: left !important;
+  font-size: 2.1vw;
+}
+#deer-p4-1 {
+  position: absolute;
+  left: 12vw;
+  width: 35vw;
+  top: 38vw;
+  z-index: 1;
+}
+#deer-p4-2 {
+  position: absolute;
+  left: 48vw;
+  width: 35vw;
+  top: 38vw;
+  z-index: 1;
+}
+/*  page 5 up */
+#p5 {
+  background-color: #401f1f;
+  height: 53vw;
+}
+
+.g5 {
+  position: absolute;
+  left: -3vw;
+  top: -13vw;
+  width: 100vw;
+  z-index: 0;
+}
+#p5-text-1 {
+  text-align: right;
+  font-size: 4.5vw;
+  line-height: 1.1;
+}
 /*  page 6 up */
 #p6 {
   background-color: var(--ci2);
