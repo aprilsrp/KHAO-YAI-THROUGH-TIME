@@ -404,45 +404,59 @@
 		<!--********** game page 17 *********-->
 
 		<div id="game" style="position: relative;">
-			<span class="fs-80"
-				style="color:#0A1C00;position: absolute; top:10vw; left: 8vw; z-index: 1;">คลิกที่ขยะเพื่อทิ้งขยะ<br></span>
-			<span class="fs-50 sarabun"
-				style="color:#0A1C00;position: absolute; top:16vw; left:18vw;z-index: 1;">มาช่วยรักษาระบบนิเวศกันเถอะ<br></span>
+            <span class="fs-80" style="color:#0A1C00;position: absolute; top:10vw; left: 8vw; z-index: 1;">คลิกที่ขยะเพื่อทิ้งขยะ<br></span>
+            <span class="fs-50 sarabun" style="color:#0A1C00;position: absolute; top:16vw; left:18vw;z-index: 1;">มาช่วยรักษาระบบนิเวศกันเถอะ<br></span>
+            
+            <img src="./img/bgGame.png" 
+            style="width: 100%; position: absolute; z-index: 0;">
 
-			<img src="./img/bgGame.png" style="width: 100%; position: absolute; z-index: 0;">
+            <!-- middle -->
+            <img src="./img/gt3.svg" id="gt3"
+            style="position: absolute; z-index: 1; top:36vw; left: 40vw; width: 20vw;">
+            <img src="./img/gt4.svg" id="gt4"
+            style="position: absolute; z-index: 2; top:22vw; left: 41vw; width: 20vw;">
+            <img src="./img/gbin1.svg" id="gbin1"
+            style="position: absolute; z-index: 2; top:20vw; left: 25vw; width: 20vw;">
+            <div id="garbage4" onclick="remove(this)">
+                <img src="./img/garbage4.svg" 
+                style="position: absolute; z-index: 3; top:40vw; left: 34vw; width: 10vw;">
+            </div>
+            <div id="garbage6" onclick="remove(this)">
+                <img src="./img/garbage6.svg" 
+                style="position: absolute; z-index: 3; top:49vw; left: 52vw; width: 10vw;">
+            </div>
+            <!-- left -->
+            <div id="garbage1" onclick="remove(this)">
+                <img src="./img/garbage1.svg" 
+                style="position: absolute; z-index: 2; top:20vw; left: 0vw; width: 20vw;">
+            </div>
+            <img src="./img/gt1.svg" id="gt1"
+            style="position: absolute; z-index: 3; top:23vw; left: 0vw; width: 35vw;">
+            <div id="garbage2" onclick="remove(this)">
+                <img src="./img/garbage2.svg" 
+                style="position: absolute; z-index: 3; top:33vw; left: -7vw; width: 29vw;">
+            </div>
+            <div id="garbage3" onclick="remove(this)">
+                <img src="./img/garbage3.svg" 
+                style="position: absolute; z-index: 3; top:52vw; left: 14vw; width: 17vw;">
+            </div>
+            <img src="./img/gt2.svg" id="gt2"
+            style="position: absolute; z-index: 4; top:40vw; left: 0vw; width: 24vw;">
+            <!-- right -->
+            <div id="garbage5" onclick="remove(this)">
+                <img src="./img/garbage5.svg" 
+                style="position: absolute; z-index: 1; top:15vw; left: 55vw; width: 19vw;">
+            </div>
+            <img src="./img/gt5.svg" id="gt5"
+            style="position: absolute; z-index: 2; top:5vw; left: 65vw; width: 35vw;">
+            <img src="./img/gbin2.svg" id="gbin2"
+            style="position: absolute; z-index: 3; top:29vw; left: 57vw; width: 20vw;">
+            <img src="./img/gt6.svg" id="gt6"
+            style="position: absolute; z-index: 4; top:20vw; left: 75vw; width: 25vw;">
+            <img src="./img/gt7.svg" id="gt7"
+            style="position: absolute; z-index: 5; top:25vw; left: 78vw; width: 22vw;">
 
-			<!-- middle -->
-			<img src="./img/gt3.svg" id="gt3"
-				style="position: absolute; z-index: 1; top:36vw; left: 40vw; width: 20vw;">
-			<img src="./img/gt4.svg" id="gt4"
-				style="position: absolute; z-index: 2; top:22vw; left: 41vw; width: 20vw;">
-			<img src="./img/gbin1.svg" id="gbin1"
-				style="position: absolute; z-index: 2; top:20vw; left: 25vw; width: 20vw;">
-			<img src="./img/garbage4.svg" id="garbage4"
-				style="position: absolute; z-index: 3; top:40vw; left: 34vw; width: 10vw;">
-			<img src="./img/garbage6.svg" id="garbage6"
-				style="position: absolute; z-index: 3; top:49vw; left: 52vw; width: 10vw;">
-			<!-- left -->
-			<img src="./img/garbage1.svg" id="garbage1"
-				style="position: absolute; z-index: 2; top:20vw; left: 0vw; width: 20vw;">
-			<img src="./img/gt1.svg" id="gt1" style="position: absolute; z-index: 3; top:23vw; left: 0vw; width: 35vw;">
-			<img src="./img/garbage2.svg" id="garbage2"
-				style="position: absolute; z-index: 3; top:33vw; left: -7vw; width: 29vw;">
-			<img src="./img/garbage3.svg" id="garbage3"
-				style="position: absolute; z-index: 3; top:52vw; left: 14vw; width: 17vw;">
-			<img src="./img/gt2.svg" id="gt2" style="position: absolute; z-index: 4; top:40vw; left: 0vw; width: 24vw;">
-			<!-- right -->
-			<img src="./img/garbage5.svg" id="garbage5"
-				style="position: absolute; z-index: 1; top:15vw; left: 55vw; width: 19vw;">
-			<img src="./img/gt5.svg" id="gt5" style="position: absolute; z-index: 2; top:5vw; left: 65vw; width: 35vw;">
-			<img src="./img/gbin2.svg" id="gbin2"
-				style="position: absolute; z-index: 3; top:29vw; left: 57vw; width: 20vw;">
-			<img src="./img/gt6.svg" id="gt6"
-				style="position: absolute; z-index: 4; top:20vw; left: 75vw; width: 25vw;">
-			<img src="./img/gt7.svg" id="gt7"
-				style="position: absolute; z-index: 5; top:25vw; left: 78vw; width: 22vw;">
-
-		</div>
+        </div>
 
 		<!-- page 18 -->
 		<img src="./img/g18.png" id="g18" style=" position: relative; width: 100%; top: 67vw;">
