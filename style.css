@@ -283,6 +283,13 @@ body {
   font-size: 4.5vw;
   line-height: 1.1;
 }
+#redtourist-p5 {
+  position: absolute;
+  left: -16vw;
+  width: 55vw;
+  top: 0vw;
+  z-index: 1;
+}
 /*  page 6 up */
 #p6 {
   background-color: var(--ci2);
