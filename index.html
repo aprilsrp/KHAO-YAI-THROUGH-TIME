@@ -32,20 +32,59 @@
               50% {transform: rotate(10deg);}
               100% {transform: rotate(0deg);}
         }
-    </style>
+            .sidenav {
+              height: 100vh;
+              width: 0;
+              position: fixed;
+              z-index: 1;
+              top: 0;
+              right: 0;
+              background-color: #111;
+              overflow-x: hidden;
+              transition: 0.5s;
+              padding-top: 3vw;
+            }
+
+            .sidenav a {
+              padding: 8px 8px 8px 32px;
+              text-decoration: none;
+              font-size: 21px;
+              color: #818181;
+              display: block;
+              transition: 0.3s;
+            }
+
+            .sidenav a:hover {
+              color: #f1f1f1;
+            }
+
+            .sidenav .closebtn {
+              position: absolute;
+              top: 0;
+              left: 0;
+              font-size: 4vw;
+            }
+            </style>
 </head>
 
 <body>
     <script src="script.js"></script>
     <!-- page 1 -->
     <div class="container" id="p1">
-        <img id="menu" src="./img/menu.svg" />
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <sp style="height: 3vw" ></sp>
+            <a href="#p2"><b>- ทำไมคนถึงชอบไปเที่ยวเขาใหญ่</b></a>
+          <a href="#p3"><b>- ปัญหาที่เกิดขึ้น</b></a>
+          <a href="#p11"><b>- การท่องเที่ยวเชิงอนุรักษ์</b></a>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img id="menu" src="./img/menu.svg" /></span>
         <theboxes class="top spacing -clip">
             <img src="./img/p1.png" alt="" class="g1">
             <box col="4"></box>
             <box col="4" style="text-align: center;">
                 <inner>
-
+                    <img src="./img/bluebird-1.svg" style="position: absolute; width: 30vw; left: 37vw; top: 5vw;">
                     <sp class="vw-2"></sp>
                     <img src="./img/logo.svg" id="logo" alt="">
                     <sp class="vw-5"></sp>
@@ -68,28 +107,14 @@
     <!-- page 2 -->
     <div class="container padding-xxl" id="p2" style="padding-bottom: 0vw !important;">
         <theboxes class="top spacing -clip">
-            <sp class="vw-5"></sp>
-            <sp class="vw-5"></sp>
             <box col="6">
-                <span id="p2-text-1"><b>ทำไมคนถึงชอบ<br>ไปเที่ยวเขาใหญ่</b></span>
-                <sp class="vw-3"></sp>
-                <inner data-aos="fade-down" data-aos-duration="300">
-                <span id="p2-text-2">เพราะว่ามี <b>น้ำตกเหวสุวัต</b> น้ำตกที่มีชื่อเสียงมาก
-                    ด้านล่างเป็นแอ่งเหมาะกับการเล่นน้ำ
-                    และยังเป็นจุดชมวิวที่สำคัญแห่งหนึ่งของอุทยานแห่งชาติเขาใหญ่</span>\
-                </inner>
+                <div class="card6" style="cursor:pointer">
+                <img src="./img/card.svg" style="width: 410vw;">
+                </div>
 
             </box>
             <box col="6" style="z-index: 4;">
-                <img src="./img/Group 4.svg" id="map" alt="">
-                <sp class="vw-5"></sp>
-                <sp class="vw-5"></sp>
-                <sp class="vw-5"></sp>
-                <sp class="vw-5"></sp>
-                <sp class="vw-5"></sp>
-                <sp class="vw-5"></sp>
-                <sp class="vw-5"></sp>
-                <sp class="vw-5"></sp>
+                <sp style="height: 83vw" ></sp>
                 <span id="p2-text-3"><b>แต่... ปัญหาก็เพิ่มมากขึ้น<br>
                         เพราะนักท่องเที่ยวที่มาเที่ยว<br>ขาดความรับผิดชอบ</b></span>
 
@@ -311,12 +336,12 @@
         <theboxes class="top  padding-l" style="top:48vw;">
             <box col="5.5"></box>
             <box col="5">
-                <inner>
-                    <img src="./img/pic-p10.png" style="width: 50vw;">
-                </inner>
+                <div class="gp12" style="cursor:pointer">
+                    <img src="./img/Group 12.svg" style="width: 200vw;" >
+                </div>
             </box>
         </theboxes>
-        <theboxes class="top  padding-s" style="top:48vw;">
+        <theboxes class="top  padding-s" style="top:70vw;">
             <box col="2"></box>
             <box col="4">
                 <inner>
@@ -340,7 +365,9 @@
         <img src="./img/head11.png" id="head11">
         <!-- page 12 -->
         <span>
-            <p class="t-center b4" id="tp12">การท่องเที่ยวเชิงอนุรักษ์<br>คือคำตอบ</p>
+            <!-- <inner data-aos="fade-up" data-aos-duration="300"> -->
+                <p class="t-center b4" id="tp12">การท่องเที่ยวเชิงอนุรักษ์<br>คือคำตอบ</p>
+            <!-- </inner> -->
         </span>
         <img src="./img/g12.png" id="g12">
         <img src="./img/fadeblueelephant.svg" id="changP12">
@@ -451,33 +478,33 @@
             style="position: absolute; z-index: 2; top:22vw; left: 41vw; width: 20vw;">
             <img src="./img/gbin1.svg" id="gbin1"
             style="position: absolute; z-index: 2; top:20vw; left: 25vw; width: 20vw;">
-            <div id="garbage4" onclick="remove(this)">
+            <div id="garbage4" onclick="remove(this)" style="cursor:pointer">
                 <img src="./img/garbage4.svg" 
                 style="position: absolute; z-index: 3; top:40vw; left: 34vw; width: 10vw;">
             </div>
-            <div id="garbage6" onclick="remove(this)">
+            <div id="garbage6" onclick="remove(this)" style="cursor:pointer">
                 <img src="./img/garbage6.svg" 
                 style="position: absolute; z-index: 3; top:49vw; left: 52vw; width: 10vw;">
             </div>
             <!-- left -->
-            <div id="garbage1" onclick="remove(this)">
+            <div id="garbage1" onclick="remove(this)" style="cursor:pointer">
                 <img src="./img/garbage1.svg" 
                 style="position: absolute; z-index: 2; top:20vw; left: 0vw; width: 20vw;">
             </div>
             <img src="./img/gt1.svg" id="gt1"
             style="position: absolute; z-index: 3; top:23vw; left: 0vw; width: 35vw;">
-            <div id="garbage2" onclick="remove(this)">
+            <div id="garbage2" onclick="remove(this)" style="cursor:pointer">
                 <img src="./img/garbage2.svg" 
                 style="position: absolute; z-index: 3; top:33vw; left: -7vw; width: 29vw;">
             </div>
-            <div id="garbage3" onclick="remove(this)">
+            <div id="garbage3" onclick="remove(this)" style="cursor:pointer">
                 <img src="./img/garbage3.svg" 
                 style="position: absolute; z-index: 3; top:52vw; left: 14vw; width: 17vw;">
             </div>
             <img src="./img/gt2.svg" id="gt2"
             style="position: absolute; z-index: 4; top:40vw; left: 0vw; width: 24vw;">
             <!-- right -->
-            <div id="garbage5" onclick="remove(this)">
+            <div id="garbage5" onclick="remove(this)" style="cursor:pointer">
                 <img src="./img/garbage5.svg" 
                 style="position: absolute; z-index: 1; top:15vw; left: 55vw; width: 19vw;">
             </div>
@@ -503,7 +530,7 @@
         <img class="bodykwangP18" src="./img/body.svg" >
         <img class="headkwangP18" src="./img/head.svg" >
 
-        <a href="#p1" style="color: #F8EFD7;">
+        <a href="#p1" style="color: #F8EFD7; cursor:pointer">
             <img src="./img/left-arrow.svg"
                 style="position: absolute; z-index: 1;  top:240vw; left: 49vw; width: 3vw; transform: rotate(180deg);">
             <p class="fs-50" style="position: absolute; z-index: 1;  top:245vw; left: 46vw;">BACK TO TOP</p>

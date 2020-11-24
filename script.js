@@ -26,7 +26,7 @@ function scrollFunction() {
 }
 
 function scrollFunctiontree() {
-  if (document.body.scrollTop > 5300 || document.documentElement.scrollTop > 5300) {
+  if (document.body.scrollTop > 5150 || document.documentElement.scrollTop > 5150) {
     document.getElementById("tree").style.top = 47+'vw';
   }
   else {
@@ -35,7 +35,7 @@ function scrollFunctiontree() {
 }
 
 function scrollFunctionhouse() {
-  if (document.body.scrollTop > 5300 || document.documentElement.scrollTop > 5300) {
+  if (document.body.scrollTop > 5150 || document.documentElement.scrollTop > 5150) {
     document.getElementById("house").style.top = 10+'vw';
   }
   else {
@@ -71,7 +71,7 @@ function scrollFunctionchangP12() {
 }
 
 function scrollFunctionchangP16() {
-  if (document.body.scrollTop > 12000 || document.documentElement.scrollTop > 12000) {
+  if (document.body.scrollTop > 14000 || document.documentElement.scrollTop > 14000) {
     document.getElementById("changP16").style.right = -8+'vw';
   }
   else {
@@ -88,4 +88,11 @@ function remove(el) {
   if (count == 6){
     alert("คุณเก็บขยะหมดแล้ว ขอบคุณที่ช่วยกันรักษาระบบนิเวศนะ!");
   }
+}
+function openNav() {
+  document.getElementById("mySidenav").style.width = "20vw";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
 }
