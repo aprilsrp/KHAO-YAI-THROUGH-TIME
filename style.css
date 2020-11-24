@@ -147,11 +147,39 @@ body {
   left: -50%;
   transition: left 0.6s;
 }
+#bodybluedeer{
+  position: absolute;
+  left: -9vw;
+  top: 0;
+  width: 25vw;
+  z-index: 10;
+}
+#headbluedeer{
+  position: absolute;
+  left: 9vw;
+  top: 0;
+  width: 25vw;
+  z-index: 10;
+  animation: head-amimate 3s infinite;
+}
+@keyframes head-amimate {
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(10deg);}
+  100% {transform: rotate(0deg);}
+}
 #leo {
   width: 35%;
   top: 70%;
   right: -40%;
   position: absolute;
+  transition: right 0.6s;
+}
+#fadebluecloudleopard-p6{
+  position: absolute;
+  top: 53vw;
+  right: -40%;
+  width: 40%;
+  z-index: 10;
   transition: right 0.6s;
 }
 
@@ -331,12 +359,21 @@ body {
     position: relative;
     height: 115vw;
 }
-.ani-p6 {
+#house {
     position: absolute;
-    top: 10vw;
+    top: 47vw;
     left: 25vw;
     width: 75vw;
     z-index: 0;
+    transition: top 0.6s;
+}
+#tree{
+    position: absolute;
+    top: 10vw;
+    left: 30vw;
+    width: 70vw;
+    z-index: 0;
+    transition: top 0.6s;
 }
 .g6{
     position: absolute;
@@ -389,7 +426,15 @@ body {
   width: 100%;
   z-index: 0;
 }
+#fadebluecloudleopard-p9{
+  position: absolute;
+  width: 35%;
+  right: -40%;
+  z-index: 10;
+  transition: right 0.9s;
 
+
+}
 #ani-9{
 }
 
@@ -440,7 +485,6 @@ body {
   right: 5%;
 }
 
-
 /* page 11 up*/
 #p11{
   position: relative;
@@ -472,7 +516,8 @@ body {
     width: 40vw;
     top: 72vw;
     z-index: 5;
-    left: 66vw;
+    right: -40vw;
+    transition: right 0.6s;
 }
 #kwangP12{
   position: absolute;
@@ -536,16 +581,10 @@ body {
 #changP16{
   position: absolute;
   top: 20vw;
-  left: 52vw;
+  right: -55vw;
   width: 55vw;
+  transition: right 0.6s;
 }
-
 --------------------------------------------
 /* game */
 --------------------------------------------
-/*#kwangP18{
-  position: absolute;
-  top: 190vw;
-  left: 52vw;
-  width: 55vw;
-}*/
