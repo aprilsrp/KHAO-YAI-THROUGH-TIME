@@ -97,9 +97,9 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 
-let count = 0
+let count_tab = 0
 function arrow_click(num) {
-    count += num
+    count_tab += num
     chage_page()
 }
 
