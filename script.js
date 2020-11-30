@@ -1,7 +1,4 @@
 AOS.init();
-window.addEventListener('scroll', function() {
-  document.getElementById('showScroll').innerHTML = window.pageYOffset + 'px';
-});
 
 window.onscroll = function() {
   scrollFunction()
@@ -100,39 +97,58 @@ function closeNav() {
 let count_tab = 0
 function arrow_click(num) {
     count_tab += num
+    console.log(count_tab)
     chage_page()
 }
 
 function chage_page() {
-    if (count == 0) {
+    if (count_tab == 0) {
         p6_page1.style.opacity = "1"
         p6_page2.style.opacity = "0"
         p6_page3.style.opacity = "0"
+        p6_page4.style.opacity = "0"
         p6_page1.style.left = "0%"
         p6_page2.style.left = "100%"
         p6_page3.style.left = "100%"
+        p6_page4.style.left = "100%"
         r_arrow_p6.style.display = "block"
         l_arrow_p6.style.display = "none"
 
     }
-    if (count == 1) {
+    if (count_tab == 1) {
         p6_page1.style.opacity = "0"
         p6_page2.style.opacity = "1"
         p6_page3.style.opacity = "0"
+        p6_page4.style.opacity = "0"
         p6_page1.style.left = "-100%"
         p6_page2.style.left = "0%"
         p6_page3.style.left = "100%"
+        p6_page4.style.left = "100%"
         r_arrow_p6.style.display = "block"
         l_arrow_p6.style.display = "block"
     }
-    if (count == 2) {
+    if (count_tab == 2) {
         p6_page1.style.opacity = "0"
         p6_page2.style.opacity = "0"
         p6_page3.style.opacity = "1"
+        p6_page4.style.opacity = "0"
         p6_page1.style.left = "-100%"
         p6_page2.style.left = "-100%"
         p6_page3.style.left = "0%"
-        r_arrow_p6.style.display = "none"
+        p6_page4.style.left = "100%"
+        r_arrow_p6.style.display = "block"
         l_arrow_p6.style.display = "block"
     }
+    if (count_tab == 3) {
+      p6_page1.style.opacity = "0"
+      p6_page2.style.opacity = "0"
+      p6_page3.style.opacity = "0"
+      p6_page4.style.opacity = "1"
+      p6_page1.style.left = "-100%"
+      p6_page2.style.left = "-100%"
+      p6_page3.style.left = "-100%"
+      p6_page4.style.left = "0%"
+      r_arrow_p6.style.display = "none"
+      l_arrow_p6.style.display = "block"
+  }
 }
